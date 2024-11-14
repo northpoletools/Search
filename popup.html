@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search With NorthPole</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Icon displayed above text -->
+    <img src="icon.png" alt="NorthPole Icon" class="icon">
+    <h1>Search With NorthPole</h1>
+    <p>Use advanced Google search operators easily.</p>
+
+    <!-- Search Button -->
+    <button id="searchOne">Apply Search</button>
+
+    <!-- Dropdown for operators -->
+    <select id="operatorDropdown">
+      <option value="none">Select an Operator</option>
+      <option value='"{}"'>Search for exact phrase ("{}")</option>
+      <option value="OR">OR</option>
+      <option value="AND">AND</option>
+      <option value="-">Exclude word (-)</option>
+      <option value="*">Wildcard (*)</option>
+      <option value="define:">Define Word (define:{})</option>
+      <option value="cache:">Cache (cache:{})</option>
+      <option value="site:">Site Search (site:{})</option>
+      <option value="related:">Related Sites (related:{})</option>
+      <option value="intitle:">Title Search (intitle:{})</option>
+      <option value="inurl:">URL Search (inurl:{})</option>
+      <option value="intext:">Text Search (intext:{})</option>
+      <option value="weather:">Weather (weather:{})</option>
+      <option value="stocks:">Stocks (stocks:{})</option>
+      <option value="map:">Map (map:{})</option>
+      <option value="movie:">Movie (movie:{})</option>
+      <option value="before:">Before Date (before:{})</option>
+      <option value="after:">After Date (after:{})</option>
+    </select>
+
+    <!-- Dropdown for file type selection -->
+    <select id="fileTypeDropdown">
+      <option value="none">Select File Type</option>
+      <option value="pdf">PDF (.pdf)</option>
+      <option value="doc">Word Document (.doc)</option>
+      <option value="docx">Word Document (.docx)</option>
+      <option value="xls">Excel Spreadsheet (.xls)</option>
+      <option value="xlsx">Excel Spreadsheet (.xlsx)</option>
+      <option value="ppt">PowerPoint (.ppt)</option>
+      <option value="pptx">PowerPoint (.pptx)</option>
+      <option value="txt">Text File (.txt)</option>
+      <option value="csv">CSV File (.csv)</option>
+      <option value="jpg">JPEG Image (.jpg)</option>
+      <option value="jpeg">JPEG Image (.jpeg)</option>
+      <option value="png">PNG Image (.png)</option>
+      <option value="gif">GIF Image (.gif)</option>
+      <option value="bmp">Bitmap Image (.bmp)</option>
+      <option value="webp">WebP Image (.webp)</option>
+      <option value="tiff">TIFF Image (.tiff)</option>
+      <option value="mp4">MP4 Video (.mp4)</option>
+      <option value="avi">AVI Video (.avi)</option>
+      <option value="mkv">MKV Video (.mkv)</option>
+      <option value="mov">MOV Video (.mov)</option>
+      <option value="wmv">WMV Video (.wmv)</option>
+      <option value="mp3">MP3 Audio (.mp3)</option>
+      <option value="wav">WAV Audio (.wav)</option>
+      <option value="flac">FLAC Audio (.flac)</option>
+      <option value="aac">AAC Audio (.aac)</option>
+      <option value="ogg">OGG Audio (.ogg)</option>
+      <option value="zip">ZIP Archive (.zip)</option>
+      <option value="rar">RAR Archive (.rar)</option>
+      <option value="7z">7z Archive (.7z)</option>
+      <option value="exe">Executable File (.exe)</option>
+      <option value="dmg">Mac Disk Image (.dmg)</option>
+      <option value="iso">ISO Image (.iso)</option>
+      <option value="apk">Android Package (.apk)</option>
+    </select>
+
+    <br><br>
+
+    <!-- Results section -->
+    <div id="results"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
